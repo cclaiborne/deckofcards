@@ -12,17 +12,11 @@ attr_accessor :cards
 
   def PrintDeck
     @cards.each do |card|
-      if (card.suit == 'hearts') || (card.suit == 'diamonds')
       puts card.rank, card.suit
-      else
-      puts card.rank, card.suit
-      end
     end
   end
 end
 
-
-#end
 class Card
 attr_accessor :rank, :suit
   def initialize(rank, suit)
